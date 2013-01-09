@@ -36,6 +36,8 @@ main(int argc, char* argv[])
     int   s_port = PORT;
     char *s_host = HOST;
 
+    int callback_period = 100; // in ms
+
     // 
     if (argc > 1)
         s_uid = argv[1];
@@ -58,8 +60,8 @@ main(int argc, char* argv[])
 	}
 	// Don't use device before it is added to a connection
 
-	// Set period for quaternion callback to 1s
-	imu_set_quaternion_period(&imu, 1000);
+	// Set period for quaternion callback to 'callback_period'
+	imu_set_quaternion_period(&imu, callback_period);
 
 	// Register "quaternion callback" to cb_quaternion
 	imu_register_callback(&imu, 
