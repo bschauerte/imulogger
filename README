@@ -1,5 +1,8 @@
 Getting started:
-- download the brickd from tinkerforge: http://download.tinkerforge.com/tools/brickd/linux/brickd-1.0.11_all.deb
+- download the brickd from tinkerforge:
+  - Linux  http://download.tinkerforge.com/tools/brickd/linux/brickd-1.0.11_all.deb
+  - Mac    http://download.tinkerforge.com/tools/brickd/macos/brickd_macos_1_0_11.dmg
+  (see here http://www.tinkerforge.com/doc/Downloads.html#downloads-tools)
 - install with dpkg -i ***.deb
 - compile the code in this folder
 - run
